@@ -18,7 +18,7 @@ body{
 .box .box_t{
     width: auto;
 }
-.box .box_t img{
+.box .box_t a img{
     padding-top: 32px;
     display: block;
     margin: 0 auto;

@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background: #f1f1f1;
+html{
+    background: #fbfbfb;
 }
 @media screen and (max-width: 380px) {
         .header .nav .nav_r .nav_r_icon i:nth-child(1){
@@ -21,6 +21,64 @@ body{
         float:right;
     }
 }
+
+
+/* 遮罩层 */
+
+#mask{
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#mask_img{
+    position: fixed;
+    left: 35%;
+    top: 18%;
+    z-index: 1001;
+}
+.mask_con{
+    width: 870px;
+    height: 1182px;
+    background: url(../img/bank-temp-cn@2x.png) no-repeat;
+    background-size: 55% 46%;
+    position: relative;
+}
+.mask_con .mask_con_btn a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin:0 auto;
+    margin-left: 300px;
+}
+.mask_con .layui-btn{
+    margin-left: 22%;
+    margin-top: 40%;
+}
+.mask_con .layui-btn-primary{
+    background: #ff4f4c;
+    color: #fff;
+    border: 1px solid#ff4f4c;
+}
+.mask_con .layui-btn-primary:hover{
+    color: #fff;
+    border: 1px solid#ff4f4c;
+}
+#close{
+    width: 22px;
+    height: 45px;
+    background: url(../img/close.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 45%;
+    top: -42px;
+}
+
+
 .header{
     width: 100%;
     height: 56px;
@@ -129,6 +187,10 @@ body{
     color: #ff4f4c;
     border: 1px solid #ff4f4c;
 }
+.header .nav .nav_r .model .model_btn a:nth-child(1):hover{
+    background: #ff4f4c;
+    color: #fff;
+}
 .header .nav .nav_r .model .model_btn a:nth-child(2):hover{
     background: #ff4f4c;
     color: #fff;
@@ -222,6 +284,9 @@ body{
     .moban .moban_tit p{
         font-size: 12px;
     }
+    #ddd{
+        padding-bottom: 40px;
+    }
 }
 .banner .banner_box p{
     font-size: 16px;
@@ -296,8 +361,7 @@ body{
     top: 3px;
 }
 .moban{
-    width: 100%;  
-    height: 500px;
+    width: 100%;
     padding-top: 300px;
     background: #f1f1f1;
 }
